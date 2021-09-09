@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #181818;
+  color: #fff;
+}
+.container {
+  display: flex;
+}
+.left {
+  flex: 1;
+  height: 100vh;
+}
+.right {
+  flex: 1;
+  height: 100vh;
+  background: url("https://image.ibb.co/cO9Lxq/login-bg.jpg") no-repeat center
+    center / cover;
+}
+@media (min-width: 1200px) {
+  .left {
+    flex: 4;
+  }
+  .right {
+    flex: 6;
+  }
+}
+.center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left .logo {
+  margin: 2rem 0;
+}
+.info {
+  margin: 1rem 0;
+}
+.left form {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+.left form input {
+  width: 100%;
+  margin-top: 0.25rem;
+  background: none;
+  border: solid 1px #fff;
+  border-radius: 3px;
+  outline: none;
+  color: #fff;
+  padding: 0.5rem;
+}
+.btn-main {
+  background-color: #f96816;
+  border: none;
+  width: 100%;
+  padding: 0.75rem 0;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.left a {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.left .or {
+  align-items: center;
+  display: flex;
+  width: 40%;
+  margin-bottom: 0.5rem;
+}
+.left .or hr {
+  height: 1px;
+  background-color: #aaa;
+  flex: auto;
+  border: none;
+}
+.left .or span {
+  padding: 0.25rem;
+}
+.btn-secondry {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 300ms;
+}
+.btn-secondry:hover {
+  border-color: #f96816;
+  color: #f96816;
+}
+.left .btn-secondry {
+  width: 40%;
+}
+footer {
+  margin: 2rem 0;
+  text-align: center;
+}
+footer a {
+  color: #f96816 !important;
+}
+.right div {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+  .left .btn-secondry,
+  .left .or {
+    width: 60%;
+  }
+  .left .logo {
+    width: 80%;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+  .left form {
+    width: 80%;
+  }
+  body {
+    overflow: scroll;
+  }
+}
